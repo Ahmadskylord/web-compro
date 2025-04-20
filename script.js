@@ -67,7 +67,7 @@ async function sendMessageToServer(message) {
     return data.reply;
   } catch (error) {
     console.error("Error sending message:", error);
-    return "Maaf, terjadi kesalahan.";
+    return "Maaf, terjadi kesalahan karna apikey tidak tersedia.";
   }
 }
 
