@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigasi Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="image/Sub-ContactUs.png" alt="Logo" style="height: 50px;">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Solusi Profesional untuk Jasa Pembuatan Website</h1>
+          <p>Kami membantu UMKM dan perusahaan membangun website yang responsif, modern, dan SEO-friendly untuk meningkatkan kredibilitas dan kehadiran online mereka.</p>
+          
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20layanan%20pembuatan%20website%20Anda." 
+                class="btn btn-primary" target="_blank">
+               <i class="fas fa-rocket"></i> Order Sekarang
+             </a>
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-play"></i> Project
+                </a>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="document.querySelector('#features').scrollIntoView({ behavior: 'smooth' })">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Keunggulan Kami</h2>
+                <p>Kami menyediakan jasa pembuatan Website untuk solusi lengkap sesuai kebutuhan digital bisnis Anda dengan teknologi terkini dan tim profesional.</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-content fade-in-left">
+                    <h3>Transformasi Digital untuk Bisnis Anda</h3>
+                    <p>Dengan pengalaman lebih dari 2 tahun di bidang teknologi , kami telah membantu ratusan bisnis meningkatkan penjualan dan efisiensi operasional melalui solusi teknologi.</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                              <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="feature-text">
+                              <h3>Desain Web Kustom</h3>
+                              <p>Tampilan website yang disesuaikan dengan identitas bisnis kamu.</p>
+                          </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                              <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Optimasi Kecepatan</h3>
+                                <p>Website ringan dan cepat diakses untuk pengalaman pengguna terbaik.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                              <i class="fas fa-search"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>SEO Friendly</h3>
+                                <p>Struktur website dirancang agar mudah ditemukan di mesin pencari.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-icon">
+                          <i class="fas fa-shield-alt"></i>
+                      </div>
+                      <div class="feature-text">
+                          <h3>Keamanan Terjamin</h3>
+                          <p>Sistem keamanan web untuk melindungi data bisnis dan pelanggan.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="grid-image fade-in-left">
+                    <div class="image-grid" id="imageGrid">
+                        <div class="grid-item">
+                            <img src="image/produk/product-pic-1.jpg" alt="Team Working">
+                        </div>
+                        <div class="grid-item">
+                            <img src="image/produk/product-pic-2.jpg" alt="Office Meeting">
+                        </div>
+                        <div class="grid-item large">
+                            <img src="image/produk/cases-pic-1.jpg" alt="Business Team">
+                        </div>
+                        <div class="grid-item">
+                            <img src="image/produk/desc-pic-3.jpg" alt="Marketing">
+                        </div>
+                    </div>
+                </div>                
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-image">
+          <img src="image/produk/cases-pic-7.jpg" alt="Tim Pengembang">
+        </div>
+        <div class="about-content">
+          <h2>Tentang Kami</h2>
+          <p>
+            Kami adalah perusahaan digital kreatif yang bergerak di bidang <strong>jasa pembuatan website profesional</strong>.
+            Dengan tim yang berpengalaman dan teknologi terbaru, kami siap membantu bisnis Anda hadir secara online
+            dengan tampilan yang modern, cepat, dan responsif.
+          </p>
+          <p>
+            Mulai dari website perusahaan, toko online, portofolio pribadi hingga sistem custom,
+            kami memberikan solusi yang disesuaikan dengan kebutuhan Anda.
+          </p>
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> Desain Modern dan Responsif</li>
+            <li><i class="fas fa-check-circle"></i> SEO Friendly dan Cepat</li>
+            <li><i class="fas fa-check-circle"></i> Maintenance & Support Terjamin</li>
+            <li><i class="fas fa-check-circle"></i> Harga Terjangkau dan Transparan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">Layanan Kami</h2>
+          <p class="section-subtitle">Kami menyediakan berbagai solusi digital untuk menunjang bisnis Anda.</p>
+      
+          <div class="service-cards">
+            <div class="service-card scroll-fade-up">
+              <i class="fas fa-laptop-code service-icon"></i>
+              <h3>Pembuatan Website</h3>
+              <p>Kami membuat website custom sesuai kebutuhan, responsif dan SEO-friendly.</p>
+            </div>
+            <div class="service-card scroll-fade-up">
+              <i class="fas fa-store service-icon"></i>
+              <h3>Toko Online</h3>
+              <p>Bangun e-commerce lengkap dengan sistem pembayaran dan pengelolaan produk.</p>
+            </div>
+            <div class="service-card scroll-fade-up">
+              <i class="fas fa-mobile-alt service-icon"></i>
+              <h3>Landing Page</h3>
+              <p>Landing page profesional untuk campaign, promosi produk, atau personal branding.</p>
+            </div>
+            <div class="service-card scroll-fade-up">
+              <i class="fas fa-tools service-icon"></i>
+              <h3>Maintenance & Support</h3>
+              <p>Perawatan rutin, update sistem, dan dukungan teknis agar website Anda selalu optimal.</p>
+            </div>
+            <div class="service-card scroll-fade-up">
+              <i class="fa-brands fa-wordpress service-icon"></i>
+
+              <h3>Wodpres Hosting</h3>
+              <p>Kami menyediakan layanan hosting terbaik kamu</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="section-title">Kontak Kami</h2>
+          <p class="section-subtitle">Hubungi kami untuk konsultasi atau informasi lebih lanjut mengenai layanan kami.</p>
+      
+          <div class="contact-wrapper">
+            <div class="contact-info scroll-fade-left">
+              <p><i class="fas fa-map-marker-alt"></i> Jl. Tgh abdul gani paok lombok</p>
+              <p><i class="fas fa-phone-alt"></i> +62 812 3456 7890</p>
+              <p><i class="fas fa-envelope"></i> ahmadskylove31@gmail.com</p>
+              <p><i class="fas fa-clock"></i> Senin - Jumat: 09.00 - 17.00</p>
+            </div>
+      
+            <form class="contact-form scroll-fade-right">
+              <input type="text" name="nama" placeholder="Nama Anda" required>
+              <input type="email" name="email" placeholder="Email Anda" required>
+              <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tombol Chat -->
+<div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+<!-- Popup Chatbot -->
+<div class="chatbot-popup" id="chatbotPopup">
+  <div class="chatbot-header">
+    <span>Chat Bantuan</span>
+    <button onclick="toggleChatbot()">×</button>
+  </div>
+  <div class="chatbot-body" id="chatMessages">
+    <div class="bot-msg">Halo! Ada yang bisa kami bantu?</div>
+  </div>
+  <form id="chatForm">
+    <input type="text" id="userInput" placeholder="Tulis pesan..." required>
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>Kilas Web</h3>
+      <p>Kami adalah mitra digital terbaik Anda untuk solusi pembuatan website profesional dan terpercaya.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontak</h4>
+      <p>ahmadskylove31@gmail.com</p>
+      <p>Telepon: +62 812-3456-7890</p>
+      <p>Jl. Tgh abdul gani paok lombok</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kilas Web. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
