@@ -722,9 +722,9 @@ body {
   }
 }
 
-/* Header Chatbot - versi upgrade */
+/* Header Chatbot - versi aesthetic */
 .chatbot-header {
-  background: linear-gradient(135deg, #007bff, #0056b3); /* gradasi biru */
+  background: linear-gradient(135deg, #4a90e2, #007bff); /* Gradasi biru */
   color: #fff;
   padding: 14px 20px;
   font-weight: 600;
@@ -732,62 +732,90 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Popup container */
+.chatbot-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 340px;
+  height: 450px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+}
 
-/* Isi Chatbot */
+/* Isi chat */
 .chatbot-body {
   flex: 1;
-  padding: 10px;
+  padding: 14px;
   overflow-y: auto;
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  background-color: #f9f9f9;
+  gap: 12px;
+  background-color: #f2f4f8;
 }
 
-/* Pesan Bot & User */
+/* Bubble chat */
 .bot-msg,
 .user-msg {
-  padding: 10px 14px;
-  border-radius: 16px;
-  max-width: 75%;
-  line-height: 1.4;
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 80%;
+  line-height: 1.5;
   word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.3s ease;
+  position: relative;
 }
 
 .bot-msg {
-  background: #e0e0e0;
+  background: #e3eaf3;
+  color: #333;
   align-self: flex-start;
 }
 
 .user-msg {
   background: #007bff;
-  color: #fff;
+  color: white;
   align-self: flex-end;
 }
 
+/* Form kirim pesan */
 #chatForm {
   display: flex;
-  border-top: 1px solid #ccc;
-  padding: 8px;
+  border-top: 1px solid #ddd;
+  padding: 10px;
   gap: 8px;
+  background-color: #fff;
 }
 
 #userInput {
   flex: 1;
-  padding: 10px;
+  padding: 10px 12px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 12px;
   resize: none;
   height: auto;
   max-height: 120px;
   overflow-y: auto;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+#userInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
 }
 
 #chatForm button {
@@ -795,19 +823,35 @@ body {
   color: #fff;
   border: none;
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.2s ease;
 }
 
 #chatForm button:hover {
   background: #0056b3;
 }
+
+/* Fade in animasi bubble */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
 @media (max-width: 480px) {
   .chatbot-popup {
     width: 90%;
     right: 5%;
     height: 400px;
+    bottom: 80px;
   }
 }
 
