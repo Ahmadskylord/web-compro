@@ -748,7 +748,8 @@ body {
 .chatbot-body {
   flex: 1;
   padding: 10px;
-  overflow-y: auto; /* Tambahkan ini */
+  overflow-y: auto; /* Pastikan ini ada */
+  max-height: 300px; /* Tambahkan batas tinggi */
   font-size: 14px;
   display: flex;
   flex-direction: column;
