@@ -1,9 +1,9 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 /* ===== BASE STYLES ===== */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: #077A7D;
+  background-color: #077a7d;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-links li a {
-  color: #06202B;
+  color: #06202b;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -69,7 +69,7 @@ body {
 .burger {
   display: none;
   font-size: 1.5em;
-  color: #077A7D;
+  color: #077a7d;
   cursor: pointer;
   padding: 5px;
   letter-spacing: 50px;
@@ -91,7 +91,7 @@ body {
     display: none;
     gap: 0;
     padding: 10px 0;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
 
@@ -207,7 +207,7 @@ body {
 .features {
   padding: 80px 20px;
   text-align: center;
-  background-color: #F5EEDD;
+  background-color: #f5eedd;
 }
 
 .container {
@@ -329,13 +329,21 @@ body {
 
 /* ===== ANIMATIONS ===== */
 @keyframes bounce {
-  from { transform: translateY(0); }
-  to { transform: translateY(10px); }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .fade-in-left {
   opacity: 0;
@@ -354,7 +362,7 @@ body {
   .navbar {
     height: 70px;
   }
-  
+
   .burger {
     display: block;
     position: absolute;
@@ -362,7 +370,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -375,54 +383,54 @@ body {
     padding: 10px 0;
     z-index: 999;
   }
-  
+
   .nav-links.active {
     display: flex;
     animation: fadeIn 0.3s ease;
   }
-  
+
   .nav-links li {
     padding: 15px 25px;
     border-bottom: 1px solid #eee;
   }
-  
+
   .nav-links li:last-child {
     border-bottom: none;
   }
-  
+
   .nav-links li a {
     color: #333;
     display: block;
   }
-  
+
   .logo img {
     width: 80px;
   }
-  
+
   /* Hero */
   .hero {
     padding: 100px 20px;
   }
-  
+
   .hero-content h1 {
     font-size: 2em;
   }
-  
+
   .hero-content p {
     font-size: 1em;
   }
-  
+
   .cta-buttons a {
     padding: 10px 20px;
     margin: 5px;
     font-size: 0.9em;
   }
-  
+
   /* Features */
   .grid-container {
     grid-template-columns: 1fr;
   }
-  
+
   .grid-item.large {
     grid-column: span 1;
   }
@@ -432,22 +440,22 @@ body {
   .hero-content h1 {
     font-size: 1.8em;
   }
-  
+
   .hero-content p {
     font-size: 0.95em;
   }
-  
+
   .cta-buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .cta-buttons a {
     width: 100%;
     margin: 0;
   }
-  
+
   .scroll-down {
     font-size: 1.2em;
   }
@@ -515,7 +523,8 @@ body {
     text-align: center;
   }
 
-  .about-content, .about-image {
+  .about-content,
+  .about-image {
     flex: 1 1 100%;
   }
 }
@@ -666,7 +675,8 @@ body {
     align-items: center;
   }
 
-  .contact-info, .contact-form {
+  .contact-info,
+  .contact-form {
     text-align: center;
   }
 }
@@ -686,7 +696,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
 }
 
@@ -705,7 +715,7 @@ body {
   height: 420px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   overflow: hidden;
   animation: fadeInUp 0.3s ease;
@@ -738,7 +748,7 @@ body {
 .chatbot-body {
   flex: 1;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: auto; /* Tambahkan ini */
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -806,7 +816,7 @@ body {
   background-color: #1e1e2f;
   color: #fff;
   padding: 50px 20px 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-container {
