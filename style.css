@@ -706,8 +706,8 @@ body {
 
 /* Popup Chatbot */
 .chatbot-popup {
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column; /* Pastikan elemen diatur secara vertikal */
   position: fixed;
   bottom: 100px;
   right: 30px;
@@ -746,15 +746,15 @@ body {
 
 /* Isi Chatbot */
 .chatbot-body {
-  flex: 1;
+  flex: 1; /* Isi ruang yang tersedia */
   padding: 10px;
-  overflow-y: auto; /* Pastikan ini ada */
-  max-height: 300px; /* Tambahkan batas tinggi */
+  overflow-y: auto;
+  max-height: calc(100% - 60px); /* Kurangi tinggi form */
   font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1; /* Warna sedikit lebih gelap */
 }
 
 /* Pesan Bot & User */
@@ -783,6 +783,7 @@ body {
   display: flex;
   border-top: 1px solid #ddd;
   background: #fff;
+  padding: 10px;
 }
 
 #chatForm input {

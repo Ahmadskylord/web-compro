@@ -104,16 +104,16 @@ Silakan ketik salah satu untuk informasi lebih lanjut!
   } else {
     // Jika pertanyaan ngawur atau tidak dikenali
     replyText = `
-Maaf, saya belum paham maksud Anda. 🤔
-
-Berikut beberapa hal yang bisa Anda tanyakan:
-- Layanan
-- Harga/Biaya
-- Kontak/Hubungi
-- Alamat
-- Portofolio/Projek
+Maaf, saya belum paham maksud Anda. 🤔<br><br>
+Berikut beberapa hal yang bisa Anda tanyakan:<br>
+- Layanan<br>
+- Harga/Biaya<br>
+- Kontak/Hubungi<br>
+- Alamat<br>
+- Portofolio/Projek<br><br>
 Silakan ketik salah satu kata kunci di atas.
-    `;
+`;
+
   }
 
   res.json({ reply: replyText });
